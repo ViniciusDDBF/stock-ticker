@@ -12,6 +12,7 @@ const App = () => {
     <div>
       {modal && <h1>{counter}</h1>}
       <div>
+        <h1 className="text-black bg-orange-400">MIAUZINHO</h1>
         <h1 className="bg-black text-orange-400">VINI</h1>
         <button
           className="bg-amber-500 border-2 p-2 rounded-2xl"
