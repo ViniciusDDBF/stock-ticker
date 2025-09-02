@@ -1,36 +1,13 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { abrir, fechar } from './store/slices/modal';
-import { incrementar, reduzir } from './store/slices/counter';
-import type { RootState } from './types';
+import Body from './components/Body';
+import Header from './components/Header';
 
 const App = () => {
-  const modal = useSelector((state: RootState) => state.modal);
-  const counter = useSelector((state: RootState) => state.counter);
-  const dispatch = useDispatch();
-
   return (
     <div>
-      {modal && <h1>{counter}</h1>}
-      <div>
-        <h1 className="text-black bg-orange-400">MIAUZINHO</h1>
-        <h1 className="bg-black text-orange-400">VINI</h1>
-        <button
-          className="bg-amber-500 border-2 p-2 rounded-2xl"
-          onClick={() => dispatch(abrir())}
-        >
-          ABRIR
-        </button>
-        <button onClick={() => dispatch(fechar())}>FECHAR</button>
-      </div>
-      <div>
-        <button onClick={() => dispatch(incrementar())}>
-          {'incrementar'.toLocaleUpperCase()}
-        </button>
-        <button onClick={() => dispatch(reduzir())}>
-          {'reduzir'.toLocaleUpperCase()}
-        </button>
-      </div>
+      <Header />
+      <Body />
     </div>
   );
 };
+
 export default App;
