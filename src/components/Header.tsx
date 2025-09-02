@@ -1,4 +1,4 @@
-import rat from '../files/Google_AI_Studio_2025-08-27T19_36_48.854Z.png';
+import rat from '../files/VirtualVini.png';
 import ThemePicker from './ThemePicker';
 
 const Header = () => {

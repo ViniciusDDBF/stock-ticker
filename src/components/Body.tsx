@@ -309,7 +309,6 @@ Respond with ONLY the JSON array - no other text.`;
       }
 
       const result = await response.json();
-      console.log(result);
       // Replace this section in your handleReport function:
 
       // The Gemini API returns the response in result.candidates[0].content.parts[0].text

@@ -168,9 +168,9 @@ const ThemePicker = () => {
 
       {/* Dropdown */}
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2 w-80 bg-gray-800 border border-gray-600 rounded-xl shadow-2xl z-50 overflow-hidden animate-in slide-in-from-top-2 duration-200">
+        <div className="absolute right-0 top-full mt-2 w-80 bg-black-800  rounded-xl shadow-2xl z-50 overflow-hidden animate-in slide-in-from-top-2 duration-200">
           {/* Header */}
-          <div className="p-4 border-b border-gray-700 bg-gradient-to-r from-gray-800 to-gray-750">
+          <div className="p-4 border-b border-black-700 bg-gradient-to-r from-black-800 to-gray-750">
             <div className="flex items-center gap-2">
               <PaletteIcon size={18} />
               <h3 className="font-semibold text-white">Theme Settings</h3>
@@ -190,32 +190,32 @@ const ThemePicker = () => {
                 type="color"
                 value={customColor}
                 onChange={(e) => handleCustomColorChange(e.target.value)}
-                className="w-10 h-10 rounded-lg border-2 border-gray-600 cursor-pointer"
+                className="w-10 h-10 rounded-lg border-2 border-black-600 cursor-pointer"
               />
               <input
                 type="text"
                 value={customColor}
                 onChange={(e) => handleCustomColorChange(e.target.value)}
-                className="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm font-mono focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+                className="flex-1 px-3 py-2 bg-black-700 border border-black-600 rounded-lg text-white text-sm font-mono focus:ring-2 focus:ring-500 focus:border-transparent outline-none"
                 placeholder="#000000"
               />
             </div>
           </div>
 
           {/* Presets */}
-          <div className="p-4">
+          <div className="p-2">
             <h4 className="text-sm font-medium text-gray-300 mb-3">
               Quick Presets
             </h4>
-            <div className="grid grid-cols-2 gap-2 max-h-64 overflow-y-auto">
+            <div className="grid grid-cols-2 gap-2  max-h-64 overflow-x-hidden">
               {THEME_PRESETS.map((preset) => (
                 <button
                   key={preset.name}
                   onClick={() => handlePresetSelect(preset)}
-                  className={`flex items-center gap-3 p-3 rounded-lg border transition-all duration-200 hover:scale-[1.02] ${
+                  className={`flex items-center gap-3 p-3 rounded-lg border transition-all duration-200 cursor-pointer ${
                     currentColor === preset.color
-                      ? 'bg-gray-700 border-gray-500 shadow-lg'
-                      : 'bg-gray-750 border-gray-600 hover:bg-gray-700 hover:border-gray-500'
+                      ? 'bg-black-700 border-black-500 shadow-lg'
+                      : 'bg-black-800 border-black-600 hover:bg-black-700 hover:border-black-500'
                   }`}
                 >
                   <div className="relative">
