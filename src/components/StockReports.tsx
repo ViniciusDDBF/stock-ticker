@@ -142,7 +142,7 @@ const StockReports: React.FC<StockReportsProps> = ({ reports }) => {
                         : 'text-red-400'
                     }`}
                   >
-                    {report.estimated_increasing ? '+' : '-'}
+                    {report.estimated_increasing ? '+' : ''}
                     {report.estimated_change_percentage.toFixed(1)}%
                   </div>
                 </div>

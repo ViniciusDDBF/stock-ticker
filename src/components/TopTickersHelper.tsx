@@ -31,9 +31,9 @@ const TopTickersHelper = ({ setInput }: TopTickersHelperProps) => {
       </button>
 
       {open && (
-        <div className="overflow-hidden absolute left-0 top-0 w-56 max-h-[320px] p-3 bg-gradient-to-br from-slate-900 to-slate-800 text-white text-sm rounded-xl shadow-2xl z-10 ">
+        <div className="overflow-hidden absolute left-0 top-0 w-56 max-h-[320px] p-3 bg-gradient-primary text-white text-sm rounded-xl shadow-2xl z-10 ">
           <p className="font-semibold mb-2 text-center">
-            Top 10 tickers (click to fill)
+            Top 5 tickers (click to fill)
           </p>
           {top10.map((item) => (
             <div

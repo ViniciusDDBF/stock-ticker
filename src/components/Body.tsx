@@ -366,7 +366,9 @@ Respond with ONLY the JSON array - no other text.`;
           <div className="w-full flex items-center justify-between gap-2">
             <h2 className="h2">
               Add up to{' '}
-              <span className="text-gradient-subtle">3 stock tickers</span>
+              <span className="text-gradient-subtle">
+                3 stock tickers {'➜➜➜➜➜'}
+              </span>
             </h2>
             <TopTickersHelper setInput={setInput} />
           </div>
